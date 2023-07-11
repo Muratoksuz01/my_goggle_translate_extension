@@ -1,0 +1,25 @@
+{
+    "name":"ilk uygulama",
+    "description":"ilk uygulamam bu benim",
+    "version":"1.0",
+    "manifest_version":3,
+    "optional_host_permissions":[
+        "https://*/*"
+    ],
+    "content_scripts":[
+    {
+    "matches":[
+        "<all_urls>"
+    ],
+    "js":[
+        "script.js"
+    ]
+    }
+    ],
+    "action":{
+        "default_title":"ceviri uygulaması",
+        "default_icon":"128_ceviri.png",
+        "default_popup":"index.html"
+    },
+    "icons":{"128":"128_ceviri.png"}
+}
